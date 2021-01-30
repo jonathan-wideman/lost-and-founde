@@ -118,6 +118,13 @@ public class PlayerCharacterController : MonoBehaviour
     const float k_JumpGroundingPreventionTime = 0.2f;
     const float k_GroundCheckDistanceInAir = 0.07f;
 
+    // ----- ----- ----- ----- ----- -----
+    // Jon's edits
+
+    private PlayerHoldItem playerHoldItem;
+
+    // ----- ----- ----- ----- ----- -----
+
     void Start()
     {
         // fetch components on the same gameObject
@@ -139,6 +146,8 @@ public class PlayerCharacterController : MonoBehaviour
         m_Controller.enableOverlapRecovery = true;
 
         m_Health.onDie += OnDie;
+
+        playerHoldItem = GetComponent<PlayerHoldItem>();
 
         // force the crouch state to false when starting
         SetCrouchingState(false, true);
@@ -254,7 +263,7 @@ public class PlayerCharacterController : MonoBehaviour
         }
 
         // character movement handling
-        bool isSprinting = m_InputHandler.GetSprintInputHeld();
+        bool isSprinting = m_InputHandler.GetSprintInputHeld() && isNotHoldingItem();
         {
             if (isSprinting)
             {
@@ -280,7 +289,7 @@ public class PlayerCharacterController : MonoBehaviour
                 characterVelocity = Vector3.Lerp(characterVelocity, targetVelocity, movementSharpnessOnGround * Time.deltaTime);
 
                 // jumping
-                if (isGrounded && m_InputHandler.GetJumpInputDown())
+                if (isGrounded && m_InputHandler.GetJumpInputDown() && isNotHoldingItem())
                 {
                     // force the crouch state to false
                     if (SetCrouchingState(false, false))
@@ -432,5 +441,10 @@ public class PlayerCharacterController : MonoBehaviour
 
         isCrouching = crouched;
         return true;
+    }
+
+
+    private bool isNotHoldingItem () {
+        return (playerHoldItem == null || playerHoldItem.heldItem == null);
     }
 }
