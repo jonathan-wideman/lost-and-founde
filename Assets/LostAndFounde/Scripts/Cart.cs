@@ -8,7 +8,7 @@ public class Cart : MonoBehaviour
     public Transform centerOfMassAnchor = null;
     public List<ItemData> items;
 
-    private Rigidbody rb;
+    public Rigidbody rb;
 
     private void Awake()
     {
