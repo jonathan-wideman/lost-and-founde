@@ -61,7 +61,7 @@
     - [ ] improve
 - [x] selling items
 - [x] display item names
-- [ ] place enemies
+- [x] place enemies
 - [ ] AUDIO
     - [ ] music
         - [ ] loop
@@ -69,6 +69,8 @@
     - [ ] sounds
 - [ ] click cart to reset cart velocity?
 - [ ] win condition: value sold?
+- [ ] spawn health on item sale
+- [x] enemies stop tracking
 
 
 
