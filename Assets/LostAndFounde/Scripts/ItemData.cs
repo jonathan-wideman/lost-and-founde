@@ -7,6 +7,6 @@ public class ItemData
 {
     // public GameObject prefab;
     public string displayName;
-    public string value;
+    public int value;
     
 }
