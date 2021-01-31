@@ -44,4 +44,8 @@ public class Cart : MonoBehaviour
             Debug.Log(datum.displayName);
         }
     }
+
+    public void EmptyItems () {
+        items = new List<ItemData>();
+    }
 }

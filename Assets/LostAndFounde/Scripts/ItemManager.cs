@@ -79,8 +79,8 @@ public class ItemManager : MonoBehaviour
             var data = dataLines[i].Split(',');
             ItemMaterial itemMaterial = new ItemMaterial
             {
-                name = data[0],
-                type = data[1],
+                name = data[0].Trim(),
+                type = data[1].Trim(),
                 value = int.Parse(data[2])
             };
             itemMaterials.Add(itemMaterial);
@@ -101,7 +101,7 @@ public class ItemManager : MonoBehaviour
             var data = dataLines[i].Split(',');
             ItemType itemType = new ItemType
             {
-                name = data[0],
+                name = data[0].Trim(),
                 value = int.Parse(data[1])
             };
             itemTypes.Add(itemType);
@@ -122,7 +122,7 @@ public class ItemManager : MonoBehaviour
             var data = dataLines[i].Split(',');
             ItemAffix itemAffix = new ItemAffix
             {
-                name = data[0],
+                name = data[0].Trim(),
                 // value = int.Parse(data[1])
             };
             itemAffixes.Add(itemAffix);
@@ -136,9 +136,9 @@ public class ItemManager : MonoBehaviour
         ItemAffix affix = GameUtil.ChooseRandom<ItemAffix>(Instance.itemAffixes);
         return new ItemData
         {
-            displayName = mat.name + " " +
+            displayName = (mat.name + " " +
                         type.name + " of " +
-                        affix.name,
+                        affix.name).Trim(),
             value = mat.value + type.value * Random.Range(100, 500)
         };
     }
