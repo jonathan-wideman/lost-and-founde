@@ -13,6 +13,18 @@ public class ItemRandomizer : MonoBehaviour
 
     private void Start() {
         item.itemData = ItemManager.GenerateItemData();
+        Transform choices = transform.Find("Model/choices");
+        if (choices != null) {
+            int c = Random.Range(0, choices.childCount);
+            int i = 0;
+            foreach (Transform choice in choices)
+            {
+                if (c != i) {
+                    choice.gameObject.SetActive(false);
+                }
+                i++;
+            } 
+        }
         Destroy(this);
     }
 }

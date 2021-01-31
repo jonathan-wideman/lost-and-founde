@@ -56,25 +56,27 @@
 # TODO
 
 - [x] delete skele ragdoll physics after time
-- [ ] loot prefabs should have models
+- [x] loot prefabs should have models
 - [x] cart moves
     - [ ] improve
 - [x] selling items
 - [x] display item names
 - [x] place enemies
-- [ ] AUDIO
-    - [ ] music
-        - [ ] loop
-        - [ ] modulate with cart movement
-    - [ ] sounds
+- [x] AUDIO
+    - [x] music
+        - [x] loop
+        - [x] modulate with cart movement
+    - [x] sounds
 - [ ] click cart to reset cart velocity?
 - [ ] win condition: value sold?
 - [ ] spawn health on item sale
 - [x] enemies stop tracking
 - [ ] menu skybox
 - [ ] large blob volume
+- [ ] large blob hitbox?
 - [x] $ icon
 - [ ] searchlights
+- [ ] punch cart
 
 
 
