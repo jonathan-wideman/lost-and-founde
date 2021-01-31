@@ -50,3 +50,13 @@
 - [ ] play 
 
 ## Misc
+
+
+
+# TODO
+
+- [ ] delete skele ragdoll physics after time
+- [ ] loot prefabs should have models
+- [ ] cart moves
+- [ ] selling items
+- [ ] display item names
