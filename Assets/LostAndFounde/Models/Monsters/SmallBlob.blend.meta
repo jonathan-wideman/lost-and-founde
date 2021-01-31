@@ -6,7 +6,27 @@ ModelImporter:
   - first:
       74: -623603649343465320
     second: Scene
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Armor_metal
+    second: {fileID: 2100000, guid: 2354ef031d89a2c4d9d4cdcd74b920d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Armor_wood
+    second: {fileID: 2100000, guid: dd5455e80e2b2b243b527e124b6a7e35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blob
+    second: {fileID: 2100000, guid: 4f680af7adb16004a95302529b989a1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skeleton_Bone
+    second: {fileID: 2100000, guid: ade75b8e1e0296843b4a9893e678d053, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
