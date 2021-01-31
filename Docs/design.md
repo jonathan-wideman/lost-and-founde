@@ -56,11 +56,11 @@
 # TODO
 
 - [x] delete skele ragdoll physics after time
-- [x] loot prefabs should have models
+- [ ] loot prefabs should have models
 - [x] cart moves
     - [ ] improve
-- [ ] selling items
-- [ ] display item names
+- [x] selling items
+- [x] display item names
 - [ ] place enemies
 - [ ] AUDIO
     - [ ] music
@@ -76,9 +76,9 @@
     - [x] detect trigger enter from cart
     - [x] copy cart contents into store
     - [x] delete cart contents
-    - [ ] while store has items
-        - [ ] sell an item
-            - [ ] add item value to current cash
+    - [x] while store has items
+        - [x] sell an item
+            - [x] add item value to current cash
             - [x] add new popup above shop displaying item name
             - [x] delete item from shop
     - [ ] detect and apply cart level up based on total sold?

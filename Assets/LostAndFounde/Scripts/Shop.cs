@@ -7,9 +7,11 @@ using TMPro;
 public class Shop : MonoBehaviour
 {
 
-    public TextMeshProUGUI textbox;
+    public TextMeshProUGUI hudTextbox = null;
+    public TextMeshProUGUI textbox = null;
     public float itemSellingDelay = 1f;
     public List<ItemData> items;
+    public int money = 0;
 
     private Coroutine sellCoroutine = null;
 
@@ -17,6 +19,11 @@ public class Shop : MonoBehaviour
     private void Awake()
     {
         items = new List<ItemData>();
+    }
+
+    private void Start()
+    {
+        UpdateHud();
     }
 
     IEnumerator SellItem(float delay)
@@ -30,6 +37,8 @@ public class Shop : MonoBehaviour
             // string message = $"\nSold Willow battleaxe of misery for {items[0].value}";
             textbox.text = textbox.text + message;
             // textbox.text = textbox.text + "\nBlah";
+            money += items[0].value;
+            UpdateHud();
             items.RemoveAt(0);
 
             // wait
@@ -64,5 +73,10 @@ public class Shop : MonoBehaviour
         {
             Debug.Log(datum.displayName);
         }
+    }
+
+    public void UpdateHud()
+    {
+        hudTextbox.text = "" + money;
     }
 }
