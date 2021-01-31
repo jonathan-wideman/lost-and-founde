@@ -6,6 +6,9 @@ ModelImporter:
   - first:
       74: -5510283879626686080
     second: BlobControl|0_Idle
+  - first:
+      74: 1260970514158668721
+    second: BlobControl|1_Jump
   externalObjects:
   - first:
       type: UnityEngine:Material
