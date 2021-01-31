@@ -1,0 +1,21 @@
+ItemName,ItemValue,ModelType,IsFinal,Description,Size
+Shortsword,1,Sword,Y,Sword,S
+Longsword,3,Sword,Y,Sword,M
+Greatsword,5,Sword,Y,Sword,L
+Axe,1,Sword,,Axe,S
+Battleaxe,3,Sword,,Axe,M
+Greataxe,5,Sword,,Axe,L
+Shield,2,Shield,Y,Shield,S
+Tower Shield,4,Shield,Y,Shield,L
+Helm,2,Helm,Y,Helm,
+Armor,4,Helm,,Armor,
+Wand,1,Sword,,Staff,S
+Staff,3,Sword,,Staff,M
+Pole,5,Sword,,Staff,L
+Arrow,1,Sword,,Arrow,
+Shortbow,1,Sword,,Bow,S
+Longbow,3,Sword,,Bow,M
+Greatbow,5,Sword,,Bow,L
+Javelin,1,Sword,,Spear,S
+Spear,3,Sword,,Spear,M
+Lance,5,Sword,,Spear,L
