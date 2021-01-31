@@ -8,6 +8,7 @@ public class PlayerHoldItem : MonoBehaviour
     public Transform itemSocket;
     public LayerMask interactLayerMask;
     public float interactionRange = 2f;
+    public float punchForce = 100f;
 
     public Item heldItem;
 
@@ -67,10 +68,15 @@ public class PlayerHoldItem : MonoBehaviour
                     QueryTriggerInteraction.Ignore
                 ))
                 {
+                    Cart cart = hit.transform.GetComponentInParent<Cart>();
                     Item item = hit.transform.GetComponentInParent<Item>();
                     if (item != null)
                     {
                         Grab(item);
+                    }
+                    else if (cart != null)
+                    {
+                        PunchCart(cart);
                     }
                 }
             }
@@ -102,5 +108,11 @@ public class PlayerHoldItem : MonoBehaviour
         item.Stow();
         // item.transform.SetParent(null);
         heldItem = null;
+    }
+
+    public void PunchCart(Cart cart)
+    {
+        Debug.Log("Punch Cart");
+        cart.rb.AddForce(transform.forward * punchForce, ForceMode.Impulse);
     }
 }

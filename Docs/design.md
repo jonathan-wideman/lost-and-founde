@@ -71,12 +71,12 @@
 - [ ] win condition: value sold?
 - [ ] spawn health on item sale
 - [x] enemies stop tracking
-- [ ] menu skybox
+- [x] menu skybox
 - [ ] large blob volume
 - [ ] large blob hitbox?
 - [x] $ icon
 - [ ] searchlights
-- [ ] punch cart
+- [x] punch cart
 
 
 
