@@ -1,0 +1,33 @@
+AffixName
+Flaming Flames
+Icy Frost
+Shocking Storms
+Rocking Tremors
+Brilliant Radiance
+Deep Shadows
+the Owl
+the Hawk
+the Eagle
+the Unladen Swallow
+the Lion
+the Tiger
+the Bear
+the Mouse
+the Bull
+the Moose
+the Platypus
+the Hippopotamus
+the Giraffe
+the Falcon
+the Narwhal
+the Seal
+the Beluga
+the Whale
+the Penguin
+the Otter
+the Duck
+the Stallion
+the Donkey
+Mischief
+Misery
+Mastery

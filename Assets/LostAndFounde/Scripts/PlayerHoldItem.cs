@@ -35,7 +35,7 @@ public class PlayerHoldItem : MonoBehaviour
                     QueryTriggerInteraction.Ignore
                 ))
                 {
-                    Debug.Log("raycast hit transform " + hit.transform);
+                    // Debug.Log("raycast hit transform " + hit.transform);
                     Cart cart = hit.transform.GetComponentInParent<Cart>();
                     if (cart != null)
                     {
@@ -97,7 +97,7 @@ public class PlayerHoldItem : MonoBehaviour
 
     public void Stow(Item item, Cart cart)
     {
-        Debug.Log("stowing " + item.itemData.displayName + " in " + cart.name);
+        // Debug.Log("stowing " + item.itemData.displayName + " in " + cart.name);
         cart.AddItemData(item.itemData);
         item.Stow();
         // item.transform.SetParent(null);
