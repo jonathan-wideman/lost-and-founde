@@ -71,6 +71,10 @@
 - [ ] win condition: value sold?
 - [ ] spawn health on item sale
 - [x] enemies stop tracking
+- [ ] menu skybox
+- [ ] large blob volume
+- [x] $ icon
+- [ ] searchlights
 
 
 
