@@ -1,0 +1,21 @@
+ItemType,ItemValue
+Shortsword,1
+Longsword,3
+Greatsword,5
+Axe,1
+Battleaxe,3
+Greataxe,5
+Shield,2
+Tower Shield,4
+Helm,2
+Armor,4
+Wand,1
+Staff,3
+Pole,5
+Arrow,1
+Shortbow,1
+Longbow,3
+Greatbow,5
+Javelin,1
+Spear,3
+Lance,5
