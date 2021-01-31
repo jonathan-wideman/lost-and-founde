@@ -13,5 +13,6 @@ public class ItemRandomizer : MonoBehaviour
 
     private void Start() {
         item.itemData = ItemManager.GenerateItemData();
+        Destroy(this);
     }
 }
