@@ -5,23 +5,23 @@
 ## Player
 - [x] can walk
 - [x] can jump
+    - [x] can't jump while carrying loot
 - [x] can run
     - [ ] uses stamina?
-    - [ ] can't run while carrying loot
+    - [x] can't run while carrying loot
 - [x] can crouch
 - [x] can pick up loot
-    - [ ] can't run with loot
-    - [ ] can't jump with loot
 - [x] can drop loot anywhere
-- [ ] can put loot in cart
+- [x] can put loot in cart
 - [x] can take damage
 - [x] can die
 
 ## Loot
 - [ ] random appearance
-- [ ] random name
-- [ ] random value
-    - [ ] value based on name?
+- [x] random name
+- [x] random value
+    - [x] value based on name
+    - [ ] improved value calculations
 - [ ] exists in world
 - [ ] dropped by heroes
 - [ ] can be picked up by player
