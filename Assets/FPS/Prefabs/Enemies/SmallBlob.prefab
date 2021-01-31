@@ -147,7 +147,7 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   flashOnHitDuration: 0.2
-  damageTick: {fileID: 8300000, guid: a7fae22399a6e1d448dc0dd2210f1dac, type: 3}
+  damageTick: {fileID: 0}
   deathVFX: {fileID: 8950624839484268180, guid: 2a8f5052fe50f7b41b17149abb0f7414,
     type: 3}
   deathVFXSpawnPoint: {fileID: 381893446485871685}
@@ -180,8 +180,8 @@ MonoBehaviour:
   - {fileID: 8934028655093144013}
   - {fileID: 1407167163009738010}
   - {fileID: 6104096765092005263}
-  onDetectSFX: {fileID: 8300000, guid: 25722734eeccba042a18e26e376ca542, type: 3}
-  MovementSound: {fileID: 0}
+  onDetectSFX: {fileID: 8300000, guid: 413eeaab10fbaa240a8dda23f318add7, type: 3}
+  MovementSound: {fileID: 8300000, guid: 6c7cbbea4d0f9d7489266e862a510860, type: 3}
   PitchDistortionMovementSpeed:
     min: 1
     max: 1.5
@@ -807,7 +807,7 @@ MonoBehaviour:
   weaponAnimator: {fileID: 0}
   muzzleFlashPrefab: {fileID: 3930201484039205849}
   unparentMuzzleFlash: 0
-  shootSFX: {fileID: 8300000, guid: a56e3c9f90e17894eb1625f603eceb54, type: 3}
+  shootSFX: {fileID: 8300000, guid: 1e2214204373e8b4f81f5d88d23d6051, type: 3}
   changeWeaponSFX: {fileID: 0}
 --- !u!82 &2231955200838058728
 AudioSource:
